@@ -4,7 +4,17 @@
 <title>WEB1 - JavaScript </title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="style.css" />
+<script src="colors.js"></script>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D72SB1KFWX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D72SB1KFWX');
+</script>
 <body>
     <h1><a href="index.html">WEB</a></h1>
     <div id="grid">
@@ -15,33 +25,7 @@
 <li><a href="3.html">JavaScript</a></li>
 </ol>
 <div>
-    <input type="button" value="night" onclick="
-  if(this.value === 'night') {
-    var target = document.querySelector('body');
-    target.style.backgroundColor = 'black';
-    target.style.color= 'white';
-    this.value = 'day'; 
-    var alist = document.querySelectorAll('a');
-      var i = 0;
-      while ( i < alist.length) {
-          alist[i].style.color = 'powderblue';
-          console.log(alist[i]);
-          i = i + 1 ;
-      }
-  
-  } else {
-    var target = document.querySelector('body');
-    target.style.backgroundColor = 'white';
-    target.style.color= 'black';
-    this.value = 'night';   
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while ( i < alist.length) {
-        alist[i].style.color = 'blue';
-        console.log(alist[i]);
-        i = i + 1 ;
-    }
-  } ">
+  <input type="button" value="night" onclick="nightDayHandler(this)" ><br>
 <h2>JavaScript 무엇인가?</h2>
 <p style="margin-top: 40px;">
 JavaScript (/ˈdʒɑːvəskrɪpt/),[10] often abbreviated JS, is a programming language that is one of
@@ -51,5 +35,39 @@ libraries.[13] All major web browsers have a dedicated JavaScript engine to exec
 </p>
 </div>
 </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RjTPKlKPM3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://khcoding.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/637481f5b0d6371309cf4194/1ghvhna1o';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+  
 </body>
 </html>
