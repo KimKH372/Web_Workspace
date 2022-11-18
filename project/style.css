@@ -1,3 +1,27 @@
- body > main > #domestic >h3 {
-    font-size: 300px;
+#wrapper {
+    width: auto;
+    height: auto;
+    
+}
+#main {
+    background-color: slateblue;
+    border: 5px solid pink;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+
+        widget {
+            border: 1px solid gray;
+        }
+        domestic {
+            border: 1px solid red;
+        }
+        abroad {
+            border: 1px solid red;
+        }   
+    }
+
+
+.CRS {
+
+    height: auto;
 }

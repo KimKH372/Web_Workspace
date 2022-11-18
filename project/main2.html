@@ -12,181 +12,285 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <!-- navbar 이미지랑 텍스트로 교체-->
-                    <img src="고양이1.jpg" alt="" width="50" height="50"> K투자정보
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                국내증시
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">코스피</a></li>
-                                <li><a class="dropdown-item" href="#">코스닥</a></li>
-                                <li><a class="dropdown-item" href="#">선물</a></li>
+    <div id="wrapper">
+        <body>
+            <header>
+                <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <!-- navbar 이미지랑 텍스트로 교체-->
+                            <img src="고양이1.jpg" alt="" width="50" height="50"> K투자정보
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        국내증시
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">코스피</a></li>
+                                        <li><a class="dropdown-item" href="#">코스닥</a></li>
+                                        <li><a class="dropdown-item" href="#">선물</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        해외증시
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">미국시장</a></li>
+                                        <li><a class="dropdown-item" href="#">중국시장(홍콩)</a></li>
+                                        <li><a class="dropdown-item" href="#">유럽시장</a></li>
+                                        <li><a class="dropdown-item" href="#">기타</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        시장지표
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">환율</a></li>
+                                        <li><a class="dropdown-item" href="#">금리</a></li>
+                                        <li><a class="dropdown-item" href="#">원자재</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        리서치
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">기업분석</a></li>
+                                        <li><a class="dropdown-item" href="#">산업분석</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        토론방
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">국내주식</a></li>
+                                        <li><a class="dropdown-item" href="#">해외주식</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mem_login">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        로그인
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">국내주식</a></li>
+                                        <li><a class="dropdown-item" href="#">해외주식</a></li>
+                                    </ul>
+                                </li>
                             </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                해외증시
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">미국시장</a></li>
-                                <li><a class="dropdown-item" href="#">중국시장(홍콩)</a></li>
-                                <li><a class="dropdown-item" href="#">유럽시장</a></li>
-                                <li><a class="dropdown-item" href="#">기타</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                시장지표
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">환율</a></li>
-                                <li><a class="dropdown-item" href="#">금리</a></li>
-                                <li><a class="dropdown-item" href="#">원자재</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                리서치
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="research.html">기업분석</a></li>
-                                <li><a class="dropdown-item" href="#">산업분석</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                토론방
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">국내주식</a></li>
-                                <li><a class="dropdown-item" href="#">해외주식</a></li>
-                            </ul>
-                        
-                        </li>
-                        
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="CRS">
+                <div id="carouselExampleControls" class="carouselslide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="고양이1.jpg" class="d-block w-100" height="300px" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="고양이2.jpg" class="d-block w-100" height="300px" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="고양이3.jpg" class="d-block w-100" height="300px" alt="...">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="고양이1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="고양이2.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="고양이3.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      
-        <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container-line">
-	<div class="tradingview-widget-container__widget"></div>
-
-	<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-	{
-	"symbols": [
-	  {
-		"proName": "FOREXCOM:SPXUSD",
-		"title": "S&P 500"
-	  },
-	  {
-		"proName": "FOREXCOM:NSXUSD",
-		"title": "US 100"
-	  },
-	  {
-		"description": "나스닥",
-		"proName": "NASDAQ:NDAQ"
-	  },
-	  {
-		"description": "니케이 225",
-		"proName": "INDEX:NKY"
-	  },
-	  {
-		"description": "환율",
-		"proName": "FX_IDC:USDKRW"
-	  },
-	  {
-		"description": "WTI",
-		"proName": "BLACKBULL:WTI"
-	  }
-	],
-	"showSymbolLogo": true,
-	"colorTheme": "light",
-	"isTransparent": false,
-	"displayMode": "regular",
-	"locale": "kr"
-  }
-	</script>
-  </div>
-  <div id="main">
-        <!-- TradingView Widget BEGIN -->
-        <div class="tradingview-widget-container">
-            <div class="tradingview-widget-container__widget"></div>
-            <div class="tradingview-widget-copyright">트레이딩뷰 제공 <a href="https://kr.tradingview.com/markets/stocks-korea/" rel="noopener" target="_blank"><span class="blue-text">오늘 증권 시장</span></a></div>
-            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
+                <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container-line">
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
             {
-            "colorTheme": "dark",
-            "dateRange": "12M",
-            "exchange": "KRX",
-            "showChart": true,
-            "locale": "kr",
-            "largeChartUrl": "",
+            "symbols": [
+            {
+                "proName": "FOREXCOM:SPXUSD",
+                "title": "S&P 500"
+            },
+            {
+                "proName": "FOREXCOM:NSXUSD",
+                "title": "US 100"
+            },
+            {
+                "description": "나스닥",
+                "proName": "NASDAQ:NDAQ"
+            },
+            {
+                "description": "니케이 225",
+                "proName": "INDEX:NKY"
+            },
+            {
+                "description": "환율",
+                "proName": "FX_IDC:USDKRW"
+            },
+            {
+                "description": "WTI",
+                "proName": "BLACKBULL:WTI"
+            }
+            ],
+            "showSymbolLogo": true,
+            "colorTheme": "light",
             "isTransparent": false,
-            "showSymbolLogo": false,
-            "showFloatingTooltip": false,
-            "width": "250",
-            "height": "600",
-            "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
-            "plotLineColorFalling": "rgba(41, 98, 255, 1)",
-            "gridLineColor": "rgba(240, 243, 250, 0)",
-            "scaleFontColor": "rgba(106, 109, 120, 1)",
-            "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
-            "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
-            "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
-            "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
-            "symbolActiveColor": "rgba(41, 98, 255, 0.12)"
-          }
+            "displayMode": "regular",
+            "locale": "kr"
+        }
             </script>
-          </div>
-        
-          <!-- TradingView Widget END -->
-        <div id="domestic">
-            
-            <h3>국내증시</h3>
         </div>
+            <div id="main">
+                    <!-- TradingView Widget BEGIN -->
+                <widget>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
+                    {
+                    "colorTheme": "dark",
+                    "dateRange": "12M",
+                    "exchange": "KRX",
+                    "showChart": true,
+                    "locale": "kr",
+                    "largeChartUrl": "",
+                    "isTransparent": false,
+                    "showSymbolLogo": false,
+                    "showFloatingTooltip": false,
+                    "width": "250",
+                    "height": "600",
+                    "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+                    "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+                    "gridLineColor": "rgba(240, 243, 250, 0)",
+                    "scaleFontColor": "rgba(106, 109, 120, 1)",
+                    "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+                    "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+                    "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+                    "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+                    "symbolActiveColor": "rgba(41, 98, 255, 0.12)"
+                }
+                    </script>
+                </widget>
+                    
+                    <!-- TradingView Widget END -->
+                <domestic>   
+                    <h3>국내증시</h3>
+                        <!-- TradingView Widget BEGIN (KOSPI) -->                           
+                                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                                <script type="text/javascript">
+                                    new TradingView.widget(
+                                        {
+                                            "width": 500,
+                                            "height": 300,
+                                            "symbol": "KRX:KOSPI",
+                                            "interval": "D",
+                                            "timezone": "Asia/Seoul",
+                                            "theme": "dark",
+                                            "style": "1",
+                                            "locale": "kr",
+                                            "toolbar_bg": "#f1f3f6",
+                                            "enable_publishing": false,
+                                            "allow_symbol_change": true,
+                                            "container_id": "tradingview_20271"
+                                        }
+                                    );
+                                </script>      
+                        <!-- TradingView Widget END -->
+                        <!-- TradingView Widget BEGIN(KOSDAQ) -->      
+                                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                                <script type="text/javascript">
+                                    new TradingView.widget(
+
+                                        {    
+                                            "width": 500,
+                                            "height": 300,
+                                            "symbol": "KRX:KOSDAQ",
+                                            "interval": "D",
+                                            "timezone": "Asia/Seoul",
+                                            "theme": "dark",
+                                            "style": "1",
+                                            "locale": "kr",
+                                            "toolbar_bg": "#f1f3f6",
+                                            "enable_publishing": false,
+                                            "allow_symbol_change": true,
+                                            "container_id": "tradingview_cfab0"
+                                        }
+                                    );
+                                </script>
+
+                    
+                    <!-- TradingView Widget END -->
+                </domestic>
+                <abroad>
+                    <h3>해외증시</h3>
+                        <!-- TradingView Widget BEGIN -->
+                        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                        <script type="text/javascript">
+                        new TradingView.widget(
+                        {
+                        "width": 500,
+                        "height": 300,
+                        "symbol": "SKILLING:NASDAQ",
+                        "interval": "D",
+                        "timezone": "Etc/UTC",
+                        "theme": "dark",
+                        "style": "1",
+                        "locale": "kr",
+                        "toolbar_bg": "#f1f3f6",
+                        "enable_publishing": false,
+                        "allow_symbol_change": true,
+                        "container_id": "tradingview_d3113"
+                    }
+                        );
+                        </script>                
+                    <!-- TradingView Widget END -->
+                    <!-- TradingView Widget BEGIN -->               
+                        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                            <script type="text/javascript">
+                            new TradingView.widget(
+                            {
+                            "width": 500,
+                            "height": 300,
+                            "symbol": "HSI:HSI",
+                            "interval": "D",
+                            "timezone": "Etc/UTC",
+                            "theme": "dark",
+                            "style": "1",
+                            "locale": "kr",
+                            "toolbar_bg": "#f1f3f6",
+                            "enable_publishing": false,
+                            "allow_symbol_change": true,
+                            "container_id": "tradingview_12c22"
+                        }
+                            );
+                            </script>
+                </abroad>
+                        
+            </div>
+                    </div>
+                    <!-- TradingView Widget END -->
+                        </div>
+                            
+                            
+                </div>
+            </div>
+        </body>
     </div>
-</body>
 </html>
