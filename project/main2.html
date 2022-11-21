@@ -70,7 +70,7 @@
                                         리서치
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">기업분석</a></li>
+                                        <li><a class="dropdown-item" href="research_c.html">기업분석</a></li>
                                         <li><a class="dropdown-item" href="#">산업분석</a></li>
                                     </ul>
                                 </li>
@@ -84,14 +84,14 @@
                                         <li><a class="dropdown-item" href="#">해외주식</a></li>
                                     </ul>
                                 </li>
-                                <li class="mem_login">
+                                <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         로그인
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">국내주식</a></li>
-                                        <li><a class="dropdown-item" href="#">해외주식</a></li>
+                                        <li><a class="dropdown-item" href="#">로그인</a></li>
+                                        <li><a class="dropdown-item" href="#">회원가입</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -160,44 +160,32 @@
         }
             </script>
         </div>
-            <div id="main">
+            <div class="main">
                     <!-- TradingView Widget BEGIN -->
-                <widget>
-                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
-                    {
-                    "colorTheme": "dark",
-                    "dateRange": "12M",
-                    "exchange": "KRX",
-                    "showChart": true,
-                    "locale": "kr",
-                    "largeChartUrl": "",
-                    "isTransparent": false,
-                    "showSymbolLogo": false,
-                    "showFloatingTooltip": false,
-                    "width": "250",
-                    "height": "600",
-                    "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
-                    "plotLineColorFalling": "rgba(41, 98, 255, 1)",
-                    "gridLineColor": "rgba(240, 243, 250, 0)",
-                    "scaleFontColor": "rgba(106, 109, 120, 1)",
-                    "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
-                    "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
-                    "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
-                    "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
-                    "symbolActiveColor": "rgba(41, 98, 255, 0.12)"
-                }
-                    </script>
-                </widget>
-                    
+                    <div id="schedule">
+                        <h3>주요 증시일정</h3>
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+                        {
+                        "colorTheme": "dark",
+                        "isTransparent": false,
+                        "width": "300",
+                        "height": "600",
+                        "locale": "kr",
+                        "importanceFilter": "-1,0,1",
+                        "currencyFilter": "KRW,USD"
+                    }
+                        </script>
+                    </div>
                     <!-- TradingView Widget END -->
-                <domestic>   
+                <div id="domestic">   
                     <h3>국내증시</h3>
+                    <div id="kospi">
                         <!-- TradingView Widget BEGIN (KOSPI) -->                           
                                 <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
                                 <script type="text/javascript">
                                     new TradingView.widget(
-                                        {
-                                            "width": 500,
+                                        {  
+                                            "width": 450,
                                             "height": 300,
                                             "symbol": "KRX:KOSPI",
                                             "interval": "D",
@@ -213,13 +201,14 @@
                                     );
                                 </script>      
                         <!-- TradingView Widget END -->
+                    </div>
                         <!-- TradingView Widget BEGIN(KOSDAQ) -->      
                                 <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
                                 <script type="text/javascript">
                                     new TradingView.widget(
 
                                         {    
-                                            "width": 500,
+                                            "width": 450,
                                             "height": 300,
                                             "symbol": "KRX:KOSDAQ",
                                             "interval": "D",
@@ -237,15 +226,15 @@
 
                     
                     <!-- TradingView Widget END -->
-                </domestic>
-                <abroad>
+                </div>
+                <div id="abroad">
                     <h3>해외증시</h3>
                         <!-- TradingView Widget BEGIN -->
                         <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
                         <script type="text/javascript">
                         new TradingView.widget(
                         {
-                        "width": 500,
+                        "width": 450,
                         "height": 300,
                         "symbol": "SKILLING:NASDAQ",
                         "interval": "D",
@@ -266,7 +255,7 @@
                             <script type="text/javascript">
                             new TradingView.widget(
                             {
-                            "width": 500,
+                            "width": 450,
                             "height": 300,
                             "symbol": "HSI:HSI",
                             "interval": "D",
@@ -281,7 +270,7 @@
                         }
                             );
                             </script>
-                </abroad>
+                </div>
                         
             </div>
                     </div>
@@ -290,6 +279,17 @@
                             
                             
                 </div>
+            </div>
+            <div style = "text-align:center;margin-top:2px;">
+                <div style="font-size:.6rem;">
+                    <span>공지사항|</span>
+                    <span>서비스소개|</span>
+                    <span>FAQ</span>
+                </div>
+                <div style="margin-top:1rem;">
+                    <h6 style="font-family: 'Lobster', cursive;">K투자정보</h6>
+                </div>
+            
             </div>
         </body>
     </div>
