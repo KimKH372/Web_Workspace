@@ -7,16 +7,16 @@
     background-color: slateblue;
     border: 5px solid pink;
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 300px 2fr;
 
         widget {
-            border: 1px solid gray;
+            border: 5px solid gray;
         }
         domestic {
-            border: 1px solid red;
+            border: 5px solid red;
         }
         abroad {
-            border: 1px solid red;
+            border: 5px solid red;
         }   
     }
 
