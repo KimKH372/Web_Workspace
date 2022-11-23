@@ -19,7 +19,7 @@ header > nav {
         .main > #domestic {
             grid-column: 2;
            
-           margin-left: auto;;
+           margin-left: auto;
         }
 
         .main > #abroad {
@@ -35,6 +35,19 @@ header > nav {
           
 
         }
+    .main > #domestic >h3{
+        text-align: center;
+    }
+    .main > #domestic > #kospi{
+        padding-bottom: 10px;
+    }
+
+    .main > #abroad >h3 {
+        text-align: center;
+    }
+    .main > #abroad > #nasdaq {
+        padding-bottom: 10px;
+    }
 
 .CRS {
 
