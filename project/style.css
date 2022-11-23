@@ -11,18 +11,26 @@ header > nav {
     
     border: 5px solid pink;
     display: grid;
-    grid-template-columns: 300px 1fr;
-
-        widget {
-            border: 1px solid gray;
-        }
-        domestic {
-            border: 1px solid red;
-        }
-        abroad {
-            border: 1px solid red;
-        }   
+    grid-template-columns: 50px;
+	grid-auto-columns: 3fr; 
     }
+        .main > #schedule {
+            grid-column: 1;
+            margin-left: auto;
+            border: 5px solid green;
+        }
+        .main > #domestic {
+            grid-column: 2;
+           width: auto;
+           margin: auto;
+            border: 5px solid blue;
+        }
+
+        .main > #abroad {
+            grid-column: 2;
+            margin: auto;
+            border: 5px solid red;
+        }  
 
 .CRS {
 
