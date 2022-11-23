@@ -8,8 +8,6 @@ header > nav {
     text-align: center;
 }
 .main {
-    
-    border: 5px solid pink;
     display: grid;
     grid-template-columns: 50px;
 	grid-auto-columns: 3fr; 
@@ -17,20 +15,31 @@ header > nav {
         .main > #schedule {
             grid-column: 1;
             margin-left: auto;
-            border: 5px solid green;
         }
         .main > #domestic {
             grid-column: 2;
-           width: auto;
-           margin: auto;
-            border: 5px solid blue;
+           
+           margin-left: auto;;
         }
 
         .main > #abroad {
-            grid-column: 2;
-            margin: auto;
-            border: 5px solid red;
+            grid-column: 3;
+            
+            margin-left: auto;
         }  
+
+        @media(max-width :1500px){
+            .main {
+                display: block;
+            }
+            #grid ol {
+                border-right: none;
+            }
+            h1 {
+                border-bottom: none;
+            }
+
+        }
 
 .CRS {
 
